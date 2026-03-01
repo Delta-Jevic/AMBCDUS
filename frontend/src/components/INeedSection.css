@@ -1,0 +1,118 @@
+/* BLUE SECTION */
+.blue-section {
+  height: 200px;
+  background-color: #4b4e8f; /* your embassy blue */
+}
+
+/* IMAGE SECTION */
+.image-section {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* WRAPPER to position card */
+.i-need-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: -120px;
+  z-index: 10;
+  padding: 0 16px;
+}
+
+/* CARD */
+.i-need-container {
+  background: #ffffff;
+  width: min(1200px, 92%);
+  padding: 52px 70px;
+  border-radius: 8px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* Title like the embassy screenshot */
+.i-need-container h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 34px;
+  letter-spacing: 1px;
+  color: #0b1f3a; /* dark navy */
+  font-weight: 700;
+}
+
+
+/* GRID */
+.i-need-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.i-need-col {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.i-need-col a {
+  text-decoration: none;
+  color: #0a5ea8; /* embassy blue link */
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.i-need-col a:hover {
+  text-decoration: underline;
+}
+
+.i-need-grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.i-need-grid a {
+  text-decoration: none;
+  color: #005ea2;
+  font-weight: 500;
+}
+
+.i-need-grid a:hover {
+  text-decoration: underline;
+}
+
+.i-need-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  /* Pull the card upward into the blue area */
+  margin-top: -120px;
+
+  /* Put it above the photo section */
+  z-index: 10;
+
+  /* no extra white space */
+  padding: 0 16px;
+}
+
+.i-need-underline {
+  width: 140px;
+  height: 4px;
+  background: #b38b2d; /* gold */
+  margin: 18px auto 40px;
+  border-radius: 2px;
+}
+
+@media (max-width: 900px) {
+  .i-need-container {
+    padding: 40px 24px;
+  }
+  .i-need-grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+  .i-need-col a {
+    font-size: 18px;
+  }
+}

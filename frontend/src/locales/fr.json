@@ -1,0 +1,147 @@
+{
+  "home": "Accueil",
+  "services": "Menu",
+  "news": "Actualités",
+  "search": "Rechercher...",
+  "title1": "AMBASSADE ET CONSULAT(S)",
+  "title2": "DE LA RÉPUBLIQUE DÉMOCRATIQUE DU CONGO AUX ÉTATS-UNIS",
+  "securityAlert": "INFORMATION D'URGENCE POUR LES CITOYENS CONGOLAIS",
+  "footer": {
+    "embassy": "Ambassade",
+    "location": "Washington, D.C. ▸",
+    "embassyFull": "Ambassade de la RDC à Washington, D.C.",
+    "addressLabel": "ADRESSE :",
+    "address": "1100 Connecticut Ave NW #725\nWashington, DC 20036\nUSA",
+    "phoneLabel": "TÉLÉPHONE :",
+    "phone": "+1 (202) 234-7690",
+    "faxLabel": "FAX :",
+    "fax": "+1 (202) 234-7690",
+    "follow": "SUIVEZ L'AMBASSADE :",
+    "mapTitle": "Ambassade de RDC à Washington DC"
+  },
+  "hero": {
+    "goToSlide": "Aller à la diapositive",
+    "slide1": {
+      "title": "BIENVENUE À L'AMBASSADE DE LA RÉPUBLIQUE DÉMOCRATIQUE DU CONGO À WASHINGTON DC",
+      "meta": "Services | Consulaire",
+      "text": "Nous vous invitons cordialement à explorer toutes les informations essentielles dont vous avez besoin pour planifier votre visite dans notre magnifique pays. La RDC possède le deuxième plus grand bassin fluvial du monde....",
+      "cta": "Lire plus →"
+    },
+    "slide2": {
+      "title": "DIPLOMATIE : Kinshasa presse l’Union africaine de sortir de la retenue face à l’escalade",
+      "meta": "Actualités | Communiqués",
+      "text": "La Ministre d’État, Ministre des Affaires Étrangères, de la Coopération internationale, de la Francophonie et de la Diaspora congolaise, Thérèse Kayikwamba Wagner s'est consacrée à l’examen de la situation sécuritaire dans l’Est de la RDC. Dans son intervention....",
+      "cta": "Lire plus →"
+    },
+    "slide3": {
+      "title": "Y.K.N Yvette Kapinga Ngandu",
+      "meta": "Ambassadrice",
+      "text": "L'ambassadrice Yvette Kapinga Ngandu a été nommée Ambassadrice Extraordinaire et Plénipotentiaire de la RDC auprès des États-Unis en juin 2025 et a pris ses fonctions le 30 octobre 2025. Avant cette nomination, l'Ambassadrice Ngandu était commissaire pour la promotion du genre et le développement humain et social à la Commission de la Communauté économique des États de l'Afrique centrale (CEEAC) du 30 août 2020 à août 2025, avec son lieu de service à Libreville, au Gabon. À ce titre, elle est devenue la première femme à diriger le plus grand département de la CEEAC, supervisant dix secteurs clés....",
+      "cta": "Lire plus →"
+    }
+  },
+  "history": {
+    "title": "Histoire des relations RDC – États-Unis",
+    "fullHistoryButton": "Toute l’histoire",
+    "items": {
+      "0": {
+        "title": "Rumble in the Jungle (1974) : Ali vs Foreman à Kinshasa",
+        "date": "Oct 30, 1974 | Histoire, Culture",
+        "excerpt": "Le combat légendaire entre Muhammad Ali et George Foreman à Kinshasa est devenu un symbole culturel mondial et un moment majeur de l’histoire sportive."
+      },
+      "1": {
+        "title": "Racines d’Afrique centrale et contribution à l’histoire américaine",
+        "date": "Histoire | Diaspora, Mémoire",
+        "excerpt": "Une partie des ancêtres des Afro-Américains provient d’Afrique centrale (région Kongo/Angola). Ces communautés ont contribué au développement économique et culturel des États-Unis."
+      },
+      "2": {
+        "title": "Relations RDC – États-Unis : diplomatie et coopération depuis 1960",
+        "date": "Depuis 1960 | Relations bilatérales",
+        "excerpt": "Les États-Unis ont établi des relations diplomatiques avec la RDC en 1960, à l’indépendance, avec l’ouverture d’une ambassade à Léopoldville (Kinshasa)."
+      }
+    }
+  },
+  "need": {
+    "title": "J'AI BESOIN",
+    "visa": "Visa pour la RDC",
+    "emergency": "Assistance d'urgence",
+    "visit": "Visiter le Congo",
+    "passport": "Passeport",
+    "alerts": "Inscrivez-vous pour les alertes",
+    "invest": "Investir en RDC",
+    "citizenAlerts": "Alertes pour les citoyens de la RDC",
+    "notarize": "Faire notariser un document"
+  },
+  "leaders": {
+    "presidentSubtitle": "Président de la République Démocratique du Congo, Chef de l'Etat",
+    "primeSubtitle": "Première ministre de la République Démocratique du Congo",
+    "foreignSubtitle": "Ministre d’Etat, Ministre des Affaires Étrangères, Coopération Internationale et Francophonie",
+    "ambassadorSubtitle": "Ambassadrice de la République Démocratique du Congo auprès des États-Unis"
+  },
+  "newsSection": {
+    "title": "Dernières actualités",
+    "allButton": "Toute l'actualité",
+    "card1": {
+      "date": "Fév 20, 2026 | Actualités"
+    },
+    "card2": {
+      "date": "Fév 12, 2026 | À la une, Actualités"
+    },
+    "card3": {
+      "date": "Déc 29, 2025 | À la une, Actualités"
+    }
+  },
+  "ambassador": {
+    "photoAlt": "Ambassadrice de la RDC aux États-Unis",
+    "title": "Ambassadrice",
+    "nameFirst": "Yvette",
+    "nameLast": "Kapinga Ngandu",
+    "role": "Ambassadrice de la République Démocratique du Congo auprès des États-Unis d’Amérique",
+    "bioTitle": "Biographie",
+    "paragraphs": {
+      "p1": "Son Excellence Madame Yvette Ngandu Kapinga a été nommée Ambassadrice Extraordinaire et Plénipotentiaire de la République Démocratique du Congo auprès des États-Unis d’Amérique en juin 2025. Elle a officiellement pris ses fonctions à Washington, D.C., le 30 octobre 2025.",
+      "p2": "Avant cette nomination, Madame l’Ambassadrice occupait, depuis le 30 août 2020, le poste de Commissaire à la Promotion du Genre, au Développement Humain et Social au sein de la Commission de la Communauté Économique des États de l’Afrique Centrale (CEEAC), basée à Libreville, au Gabon, fonction qu’elle a exercée jusqu’en août 2025.",
+      "p3": "À ce titre, elle a été la première femme à diriger le plus vaste département de la CEEAC, couvrant dix secteurs essentiels, notamment : la santé, l’action humanitaire, l’éducation, la recherche scientifique, la culture, la migration, l’emploi, la jeunesse, le sport, le genre et les affaires sociales. Elle était également la plus jeune des sept membres élus de la nouvelle Commission, à seulement 44 ans.",
+      "p4": "Madame l’Ambassadrice Ngandu compte plus de 25 ans d’expérience professionnelle au sein d’institutions diplomatiques et internationales, avec une expertise reconnue en médiation, prévention et résolution des conflits."
+    },
+    "experienceTitle": "Expérience et expertise",
+    "institutionsTitle": "Institutions et organisations",
+    "institutions": [
+      "La Communauté Économique des États de l’Afrique Centrale (CEEAC)",
+      "Le Mécanisme Africain d’Évaluation par les Pairs (MAEP), Johannesburg",
+      "La Commission de l’Union africaine, Addis-Abeba (12 ans)",
+      "Le Secrétariat des Nations Unies, New York",
+      "L’International Peace Institute (IPI)",
+      "Le National Endowment for Democracy (NED)",
+      "La Voice of America",
+      "Le Département d’État des États-Unis, Washington, D.C."
+    ],
+    "contributionsTitle": "Contributions continentales",
+    "contributionsParagraph": "Au niveau continental, ses contributions majeures incluent sa participation active à la rédaction de la Déclaration de l’Union africaine sur le Genre (adoptée en juillet 2004), ainsi que du Rapport de l’Union africaine sur les Femmes et les Enfants dans les Conflits armés (2010). Ces travaux ont contribué, en juin 2017, à la création du Réseau panafricain des femmes médiatrices (FemWise-Africa).",
+    "mediationTitle": "Médiation et diplomatie préventive",
+    "mediationParagraph": "En 2008, elle a fondé et dirigé l’Unité de Médiation continentale et le Secrétariat du Groupe des Sages de l’Union africaine, qu’elle a coordonnés pendant douze ans. À ce poste stratégique, elle a piloté de nombreuses missions de diplomatie préventive et de bons offices, notamment :",
+    "mediationList": [
+      "Médiation post-électorale conduite par Kofi Annan au Kenya (2008)",
+      "Initiatives de paix en Afrique du Sud (2009)",
+      "Processus en Tunisie et en Égypte (2011–2013) durant le Printemps arabe",
+      "Bons offices d’Edem Kodjo en RDC (2016–2018)",
+      "Interventions au Sénégal, au Ghana, en Sierra Leone, au Togo et au Burkina Faso"
+    ],
+    "reportsTitle": "Rapports thématiques majeurs",
+    "reportsParagraph": "Sous la direction de plusieurs Présidents de la Commission de l’Union africaine — Jean Ping, Nkosazana Dlamini Zuma et Moussa Faki Mahamat —, l’Ambassadrice Ngandu a supervisé la rédaction de rapports thématiques majeurs sur la paix et la sécurité en Afrique, parmi lesquels :",
+    "reportsList": [
+      "Les conflits électoraux (2008)",
+      "L’impunité, la justice et la réconciliation nationale (2009)",
+      "Les femmes et les enfants dans les conflits armés (2010)",
+      "La gestion des changements anticonstitutionnels de gouvernement (2012)",
+      "La promotion d’une culture de paix en Afrique (2015)"
+    ],
+    "trainingTitle": "Formation et engagements",
+    "trainingParagraph": "Avant son engagement au sein de l’Union africaine, elle a occupé le poste de Directrice principale des programmes Afrique à l’International Peace Institute (IPI) à New York (2003–2008). Elle a également collaboré avec le National Endowment for Democracy (NED), la Voice of America et le Département d’État américain à Washington, D.C.",
+    "trainingParagraph2": "Titulaire d’un Master en Administration publique et Relations internationales de la Bowling Green State University (Ohio, États-Unis), Son Excellence Yvette Ngandu Kapinga a participé à plus de trente Sommets de l’Union africaine ainsi qu’à d’innombrables séminaires et missions de paix à travers le continent africain, ce qui fait d’elle une experte reconnue des affaires africaines.",
+    "languagesTitle": "Langues",
+    "languagesParagraph": "Polyglotte, elle parle couramment le français, l’anglais, l’espagnol et le lingala, et possède une bonne maîtrise du portugais et du swahili.",
+    "responsibilitiesTitle": "Responsabilités et conseils",
+    "responsibilitiesParagraph": "Elle siège également au Conseil d’administration du Centre pour la paix et la résolution des conflits en Afrique de la California State University, Sacramento, ainsi qu’au Comité consultatif technique de l’Institute for Peace and Security Studies (IPSS) à Addis-Abeba."
+  }
+}

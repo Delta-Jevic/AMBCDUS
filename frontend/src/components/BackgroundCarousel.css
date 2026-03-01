@@ -1,0 +1,81 @@
+/* src/components/BackgroundCarousel.css */
+
+.bg-carousel {
+  height: 420px;
+  margin-top: -220px; /* keep your no-white-gap fix */
+  position: relative;
+  z-index: 1;
+}
+
+.bg-carousel__viewport {
+  height: 100%;
+  overflow: hidden;
+}
+
+.bg-carousel__track {
+  height: 100%;
+  display: flex;
+  width: 500%; /* 5 slides (4 + duplicate first) */
+  animation: officialPauseSlide 32s infinite;
+}
+
+/* Each slide = 20% because 5 slides total */
+.bg-carousel__slide {
+  flex: 0 0 20%;
+  height: 100%;
+}
+
+.bg-carousel__image {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*
+  4 real slides:
+  - Pause on each slide
+  - Then slide to next
+  - Final slide goes to duplicate first, loop looks smooth
+
+  Timeline idea (32s total):
+  For each slide:
+   - ~5s pause
+   - ~3s slide
+  Repeated 4 times = 32s
+*/
+@keyframes officialPauseSlide {
+  /* Slide 1 (pause) */
+  0%   { transform: translateX(0%); }
+  16%  { transform: translateX(0%); }      /* pause */
+
+  /* Slide to 2 */
+  25%  { transform: translateX(-20%); }    /* move */
+
+  /* Slide 2 (pause) */
+  41%  { transform: translateX(-20%); }    /* pause */
+
+  /* Slide to 3 */
+  50%  { transform: translateX(-40%); }
+
+  /* Slide 3 (pause) */
+  66%  { transform: translateX(-40%); }
+
+  /* Slide to 4 */
+  75%  { transform: translateX(-60%); }
+
+  /* Slide 4 (pause) */
+  91%  { transform: translateX(-60%); }
+
+  /* Slide to duplicate Slide 1 (for seamless loop) */
+  100% { transform: translateX(-80%); }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .bg-carousel__track {
+    animation: none;
+    transform: translateX(0%);
+  }
+}

@@ -1,0 +1,125 @@
+/* BLUE BACKGROUND */
+
+/* 🇨🇩 DRC FLAG LINE */
+.footer-flag-line {
+  height: 6px;
+  width: 100%;
+  display: flex;
+}
+
+.footer-flag-line::before,
+.footer-flag-line::after {
+  content: "";
+  display: block;
+  height: 100%;
+}
+
+/* Blue */
+.footer-flag-line {
+  background: linear-gradient(
+    to right,
+    #007fff 0%,
+    #007fff 45%,
+    #f7d116 45%,
+    #f7d116 55%,
+    #ce1021 55%,
+    #ce1021 100%
+  );
+}
+.footer-blue {
+  background: #1f2f6b; /* deep embassy blue */
+  padding: 80px 6%;
+}
+
+/* WHITE CENTERED BOX */
+.footer-box {
+  background: white;
+  border-radius: 10px;
+  padding: 60px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* FLEX LAYOUT */
+.footer-content {
+  display: flex;
+  gap: 60px;
+}
+
+/* LEFT INFO */
+.footer-info {
+  flex: 1;
+}
+
+.footer-info h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.footer-location {
+  color: #b38b2d;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.footer-info h4 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-section strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.footer-section p {
+  margin: 0;
+  color: #333;
+}
+
+.footer-social {
+  margin-top: 30px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons span {
+  background: #b38b2d;
+  color: white;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* MAP */
+.footer-map {
+  flex: 1;
+}
+
+.footer-map iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-content {
+    flex-direction: column;
+  }
+}

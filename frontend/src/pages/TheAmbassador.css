@@ -1,0 +1,199 @@
+/* HERO */
+.amb-hero {
+  background: #2b3f8a; /* embassy blue */
+  min-height: 260px;
+  position: relative;
+  overflow: hidden;
+}
+
+.amb-bio-title {
+  margin: 10px 0 22px;
+  font-size: 26px;
+  font-weight: 800;
+  color: #1f2f6b;
+}
+
+.amb-bio-subtitle {
+  margin: 28px 0 10px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #111;
+}
+
+.amb-bio p {
+  margin: 0 0 18px;
+  color: #444;
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+.amb-list {
+  margin: 8px 0 18px 18px;
+  padding: 0;
+  color: #444;
+  line-height: 1.9;
+}
+
+.amb-list li {
+  margin-bottom: 8px;
+}
+
+/* Optional: faint map pattern feel */
+.amb-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.15;
+  background-image: radial-gradient(circle at 70% 50%, #ffffff 1px, transparent 1px);
+  background-size: 22px 22px;
+  pointer-events: none;
+}
+
+.amb-hero-overlay {
+  position: relative;
+  padding: 70px 0 60px;
+}
+
+.amb-hero-container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+
+.amb-hero h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 44px;
+  font-weight: 800;
+}
+
+.amb-hero p {
+  margin: 10px 0 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 600;
+}
+
+/* MAIN */
+.amb-main {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  padding: 55px 0 80px;
+}
+
+/* CARD */
+.amb-card {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 40px;
+  padding: 40px;
+  align-items: center;
+}
+
+/* PHOTO */
+.amb-photo img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  display: block;
+  border-radius: 3px;
+}
+
+/* INFO */
+.amb-info h2 {
+  margin: 0 0 18px;
+  color: #2b3f8a;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.amb-name {
+  margin: 0 0 10px;
+}
+
+.amb-first {
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+.amb-last {
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  color: #111;
+}
+
+.amb-divider {
+  height: 1px;
+  background: #d9d9d9;
+  width: 70%;
+  margin: 18px 0;
+}
+
+.amb-role {
+  margin: 0;
+  color: #666;
+  line-height: 1.7;
+  max-width: 420px;
+}
+
+/* Social Buttons */
+.amb-social {
+  display: flex;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.amb-social-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  text-decoration: none;
+  color: #fff;
+}
+
+.amb-social-btn.fb {
+  background: #3b5998;
+}
+
+.amb-social-btn.x {
+  background: #111;
+}
+
+/* BIO */
+.amb-bio {
+  margin-top: 42px;
+  color: #444;
+  line-height: 1.9;
+  font-size: 16px;
+  width: min(900px, 100%);
+}
+
+.amb-bio p {
+  margin: 0 0 20px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .amb-card {
+    grid-template-columns: 1fr;
+    padding: 26px;
+  }
+
+  .amb-hero h1 {
+    font-size: 36px;
+  }
+
+  .amb-info h2 {
+    font-size: 28px;
+  }
+
+  .amb-divider {
+    width: 100%;
+  }
+}

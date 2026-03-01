@@ -1,0 +1,144 @@
+
+.hdr {
+  position: fixed;        /* stays visible on scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background: white;
+  /* Border removed here; it is applied to the container instead so that the grey line sits above the alert bar */
+}
+
+/* ALERT BANNER */
+.hdr__alertBar {
+  width: 100%;
+  background-color: #c61616; /* a strong red similar to the provided mock-up */
+  color: #ffffff;
+  text-align: center;
+  padding: 6px 10px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Make the entire banner text clickable */
+.hdr__alertLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hdr__alertLink:hover {
+  text-decoration: underline;
+}
+
+/* Center the inside content like embassy sites */
+.hdr__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Add a bottom border to separate the main header content from the alert bar */
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* LEFT SIDE */
+.hdr__left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hdr__flag {
+  width: 60px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.hdr__logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.hdr__titleWrap {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.hdr__title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0b2d5c;
+}
+
+.hdr__subtitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0b2d5c;
+}
+
+/* RIGHT SIDE */
+.hdr__right {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* more breathing space */
+}
+
+/* NAV */
+.hdr__nav {
+  display: flex;
+  gap: 20px;
+}
+
+.hdr__link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #0b2d5c;
+  font-size: 15px;
+}
+
+.hdr__link:hover {
+  color: #123c7a;
+}
+
+/* SEARCH */
+.hdr__searchInput {
+  width: 170px; /* smaller search */
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* LANGUAGE SWITCH */
+.hdr__langSwitch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hdr__langBtn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #0b2d5c;
+  font-size: 14px;
+}
+
+.hdr__langBtn.active {
+  color: white;
+  background: #0b2d5c;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.hdr__divider {
+  font-weight: 600;
+  color: #888;
+}

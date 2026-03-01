@@ -1,0 +1,120 @@
+
+.leaders-section {
+  /* Match the bright yellow background used on the official website */
+  background-color: #1f2f6b;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  /* Use a dark navy for the text, matching the official site */
+  color: #0b2d5c;
+}
+
+/* Shared card styles */
+.leader-box {
+  /* Use a pure white background like the official cards */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  /* All cards share the same maximum width to match the minister boxes on the reference site */
+  max-width: 450px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer; /* show pointer for interactive cards */
+  display: block;
+  overflow: hidden;
+
+  /* Keep relative positioning for potential pseudo-elements */
+  position: relative;
+
+  /* Ensure all cards share the same approximate height by enforcing a minimum height
+     and using flex layout.  This replicates the consistent box heights on the
+     official website. */
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Both single and double cards share the same width; no special widths are needed */
+
+/* Hover effect for interactive cards */
+.leader-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Layout for middle row */
+.leaders-row {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Image inside card */
+.leader-box__img {
+  width: 100%;
+  display: block;
+  /* Fix the image height so all cards align.  The object-fit property
+     maintains the aspect ratio while filling the available height. */
+  height: 55%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+}
+
+/* Content wrapper for text inside the card */
+.leader-box__content {
+  /* Allow the content area to expand and fill the remaining space */
+  flex: 1;
+  padding: 20px 24px;
+}
+
+/* Titles and subtitles styling */
+.leader-box__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #0b2d5c;
+
+  /* Display inline-block so the decorative underline applies only to the text */
+  display: inline-block;
+  padding-bottom: 4px;
+
+  /* Red underline similar to the official cards */
+  position: relative;
+}
+
+/* Add a small red bar beneath the heading */
+.leader-box__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #c61616;
+}
+
+.leader-box__subtitle {
+  font-size: 14px;
+  margin: 0;
+  color: #0b2d5c;
+}
+
+/* When a leader card (anchor) is hovered, change the title colour to match the accent */
+.leader-box:hover .leader-box__title {
+  color: #c61616;
+}
+
+
+/* Disabled card styling when ambassador link is missing */
+.leader-box--disabled {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}

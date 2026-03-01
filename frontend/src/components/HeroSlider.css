@@ -1,0 +1,220 @@
+/* ===============================
+   FULL HERO SECTION
+================================== */
+
+.rdcHero {
+  min-height: calc(100vh - 90px); /* adjust if header height changes */
+  padding-top: 110px;
+  padding-bottom: 60px;
+
+  background: #1f2f6b;
+  display: flex;
+  align-items: center;
+
+  overflow: hidden; /* prevents animation overflow */
+}
+
+/* ===============================
+   CENTERED CONTAINER
+================================== */
+
+.rdcHero__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 100%;
+}
+
+/* Wrapper that receives phase classes from JSX */
+.rdcHero__gridWrap {
+  width: 100%;
+}
+
+/* ===============================
+   TWO COLUMN LAYOUT
+================================== */
+
+.rdcHero__grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* ===============================
+   LEFT TEXT
+================================== */
+
+.rdcHero__title {
+  color: #ffffff;
+  font-size: 46px;
+  line-height: 1.05;
+  font-weight: 900;
+  margin: 0 0 14px 0;
+}
+
+.rdcHero__meta {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.rdcHero__text {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 600;
+  max-width: 520px;
+  margin: 0 0 26px 0;
+}
+
+/* ===============================
+   RED BUTTON
+================================== */
+
+.rdcHero__btn {
+  display: inline-block;
+  background: #d31f2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  padding: 12px 18px;
+  border-radius: 6px;
+}
+
+.rdcHero__btn:hover {
+  filter: brightness(0.95);
+}
+
+/* ===============================
+   RIGHT IMAGE CARD + BORDER STYLE
+================================== */
+
+.rdcHero__imgCard {
+  background: rgba(255, 255, 255, 0.10);
+  padding: 1px;
+  border-radius: 1px;
+  max-width: 100%;
+}
+
+.rdcHero__img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+/* ===============================
+   DOTS  . . .  (BOTTOM CENTER)
+================================== */
+
+.rdcHero__dots {
+  margin-top: 42px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.rdcHero__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.45);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ .rdcHero__dot:focus {
+  outline: none;
+}
+
+.rdcHero__dot.active {
+  background: #ffffff;
+}
+
+/* ===============================
+   ANIMATIONS (LIKE VIDEO)
+   - Text comes from bottom up
+   - Image slides left -> right
+================================== */
+
+/* When a new slide comes IN */
+.rdcHero__gridWrap.phase-in .rdcHero__left {
+  animation: textUpIn 900ms ease-out both;
+}
+
+.rdcHero__gridWrap.phase-in .rdcHero__right,
+.rdcHero__gridWrap.phase-in .rdcHero__imgCard {
+  animation: imageLeftToRightIn 1000ms ease-out both;
+}
+
+/* When slide goes OUT (subtle fade) */
+.rdcHero__gridWrap.phase-out .rdcHero__grid {
+  animation: fadeOut 650ms ease-in both;
+}
+
+.hero-slider {
+  background: #555a9a; /* your blue */
+  padding-bottom: 160px; /* creates blue space so card can sit “inside” */
+}
+
+/* Keyframes */
+@keyframes textUpIn {
+  from {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes imageLeftToRightIn {
+  from {
+    opacity: 0;
+    transform: translateX(-28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* ===============================
+   RESPONSIVE
+================================== */
+
+@media (max-width: 980px) {
+  .rdcHero {
+    min-height: auto;
+    padding-top: 110px;
+  }
+
+  .rdcHero__grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .rdcHero__title {
+    font-size: 36px;
+  }
+
+  .rdcHero__img {
+    height: 260px;
+  }
+}
