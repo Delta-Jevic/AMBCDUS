@@ -142,3 +142,112 @@
   font-weight: 600;
   color: #888;
 }
+
+/* --- MOBILE LAYOUT --- */
+.hdr__right--mobile {
+  display: none;
+}
+
+.hdr__iconBtn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px;
+  line-height: 1;
+  color: #0b2d5c;
+}
+
+.hdr__langIcon {
+  font-weight: 800;
+  border: 1px solid #0b2d5c;
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 13px;
+}
+
+.hdr__burger {
+  font-size: 22px;
+}
+
+/* hidden mobile panel under header */
+.hdr__mobilePanel {
+  display: none;
+  background: white;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hdr__mobilePanel.open {
+  display: block;
+}
+
+.hdr__mobileInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 16px;
+}
+
+.hdr__searchInput--mobile {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.hdr__mobileNav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.hdr__mobileLink {
+  padding: 10px 0;
+  text-decoration: none;
+  font-weight: 700;
+  color: #0b2d5c;
+  border-top: 1px solid #f1f1f1;
+}
+
+.hdr__mobileLang {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+/* BREAKPOINT */
+@media (max-width: 768px) {
+  .hdr__container {
+    padding: 10px 14px;
+  }
+
+  /* hide big title block to match screenshot style */
+  .hdr__titleWrap {
+    display: none;
+  }
+
+  /* hide desktop nav/search/lang */
+  .hdr__right--desktop {
+    display: none;
+  }
+
+  /* show icon row */
+  .hdr__right--mobile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* make logos smaller on phone */
+  .hdr__flag {
+    width: 48px;
+    height: 32px;
+  }
+
+  .hdr__logo {
+    width: 34px;
+    height: 34px;
+  }
+
+  .hdr__alertBar {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+}
