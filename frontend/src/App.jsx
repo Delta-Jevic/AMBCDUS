@@ -1,9 +1,8 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import TheAmbassador from "./pages/TheAmbassador";
 
-export default function App() {
+function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -11,3 +10,5 @@ export default function App() {
     </Routes>
   );
 }
+
+export default App;
